@@ -210,26 +210,6 @@ const AppRoutes = () => {
               element:<AddSemester/>
              },
             {
-<<<<<<< .merge_file_KOdHie
-              path: "slides",
-              element: <AddNewSlides/>,
-              children:[
-                
-              ]
-            },{
-              path:"FirstSemesterSlides",
-              element:<FirstSemesterSlides/>
-             },
-             
-                
-          
-            // {
-            //   path: "attendance",
-            //   element: <AddNewAttendance />,
-            // },
-          
-            
-=======
               path: "attendance",
               element: <MainAttendance/>,
               children:[
@@ -248,7 +228,6 @@ const AppRoutes = () => {
           {path:'/dashboard/academics/attendance/semesters/8/attendancetable/attendancechart',
           element:<AttendanceChart/>
         },
->>>>>>> .merge_file_LqihhF
           ],
         },
         {

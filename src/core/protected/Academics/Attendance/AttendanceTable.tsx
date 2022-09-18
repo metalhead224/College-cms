@@ -9,7 +9,7 @@ import { GridSaveAltIcon } from '@mui/x-data-grid';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import dayjs, { Dayjs } from 'dayjs';
+import dayjs, { Dayjs } from 'react-dayjs';
 import { MdSave } from 'react-icons/md';
 import { green, pink, red } from '@mui/material/colors';
 import { Link } from 'react-router-dom';
