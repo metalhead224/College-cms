@@ -2,6 +2,7 @@ import { Children, lazy, Suspense } from "react";
 import { useRoutes } from "react-router-dom";
 import LoadingSpinner from "../components/LoadingSpinner/LoadingSpinner";
 
+
 //use react lazy to import components for lazy loading components
 
 const Login = lazy(() => import("../core/public/LogIn/Login"));
@@ -85,6 +86,26 @@ const AddNewRole = lazy(
 const AddNewUser = lazy(
   () => import("../core/protected/UserManagement/Users/AddNewUser")
 );
+
+
+const MainAttendance=lazy(
+  ()=>import ('../core/protected/Academics/Attendance/MainAttendance')
+)
+const Semesters=lazy(
+  ()=>import ('../core/protected/Academics/Attendance/Semesters')
+)
+const EightSemester=lazy(
+  ()=>import ('../core/protected/Academics/Attendance/EigthSemester')
+)
+
+const AttendanceTable=lazy(
+  ()=>import ('../core/protected/Academics/Attendance/AttendanceTable')
+)
+const AttendanceChart=lazy(
+  ()=>import ('../core/protected/Academics/Attendance/AttendanceChart')
+)
+
+
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -189,6 +210,7 @@ const AppRoutes = () => {
               element:<AddSemester/>
              },
             {
+<<<<<<< .merge_file_KOdHie
               path: "slides",
               element: <AddNewSlides/>,
               children:[
@@ -207,12 +229,33 @@ const AppRoutes = () => {
             // },
           
             
+=======
+              path: "attendance",
+              element: <MainAttendance/>,
+              children:[
+                {
+                  path:'semesters',
+                  element:<Semesters/>,
+                }
+              ]
+            },
+            {path:'/dashboard/academics/attendance/semesters/8',
+            element:<EightSemester/>
+          },
+          {path:'/dashboard/academics/attendance/semesters/8/attendancetable',
+            element:<AttendanceTable/>
+          },
+          {path:'/dashboard/academics/attendance/semesters/8/attendancetable/attendancechart',
+          element:<AttendanceChart/>
+        },
+>>>>>>> .merge_file_LqihhF
           ],
         },
         {
           path: "users",
           element: <NoticeBoard />,
         },
+        
       ],
     },
     {

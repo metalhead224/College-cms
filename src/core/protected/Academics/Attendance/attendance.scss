@@ -1,0 +1,73 @@
+.main-attendance{
+    .faculty{
+      padding: 10px 0;
+      .faculty-title{
+          font-size: 20px;
+          font-weight: bold;
+      }
+      .faculty-body{
+          padding-top: 10px;
+          display: flex;
+          
+          gap:15px;
+         
+      }
+    }
+      
+      
+  }
+  .subjects{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+  }
+  .main-attendance-card{
+    width: 150px;
+    height: 200px;
+    background-color: gainsboro;
+    // opacity: 0.6;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  align-items: center;
+  // font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 1px solid #EFF2F5;
+  background: #F8F8F8;
+  text-align: center;
+  font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #B5B5C3;
+&:active{
+  color: black;
+}
+  }
+
+  .attendance-table{
+    padding: 20px;
+  }
+  .css-1lae0bd-MuiInputBase-root-MuiOutlinedInput-root{
+    border: 1px solid grey;
+    // margin-top: 20px;
+    height: 40px;
+  }
+  .css-zylse7-MuiButtonBase-root-MuiIconButton-root:hover {
+    background-color:inherit;
+}
+  .css-inp33z-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root, .css-1u3bzj6-MuiFormControl-root-MuiTextField-root, .css-18bz2fo-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 200px;
+    // position: left;
+    // position: relative;
+    // z-index: 1;
+    // left: 32%;
+    // top: 13%;
+    height: 40px;
+    border: 1px solid grey;
+outline: 0px;
+  }
+ 
+ 
