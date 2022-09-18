@@ -12,7 +12,7 @@ const AddNewProgram = () => {
 
   useEffect(() => {
     headerDetails.setSubHeader("Add Program");
-  }, []);
+  }, [headerDetails]);
 
   return (
     <div className="d-flex flex-column w-100 mt-3">

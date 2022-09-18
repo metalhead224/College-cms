@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { Children, lazy, Suspense } from "react";
 import { useRoutes } from "react-router-dom";
 import LoadingSpinner from "../components/LoadingSpinner/LoadingSpinner";
 
@@ -49,6 +49,26 @@ const AddNewCourse = lazy(
 const AddNewFaculty = lazy(
   () => import("../core/protected/Academics/Faculty/AddNewFaculty")
 );
+const AddNewSlides = lazy(
+  () => import("../core/protected/Academics/Slides/AddNewSlides")
+);
+const AddSemester=lazy(
+  ()=>import("../core/protected/Academics/Slides/AddSemester")
+)
+const FirstSemesterSlides=lazy(
+  ()=>import("../core/protected/Academics/Slides/FirstSemesterSlides")
+)
+
+
+// const AddNewAttendance = lazy(
+//   () => import("../core/protected/Academics/Atttendances/AddNewAttendance")
+// );
+const AddNewEmail = lazy(
+  () => import("../core/protected/NoticeBoard/Emaile/AddNewEmail")
+);
+
+
+
 
 const AddNewProgram = lazy(
   () => import("../core/protected/Academics/Program/AddNewProgram")
@@ -56,6 +76,7 @@ const AddNewProgram = lazy(
 const AcademicDashboard = lazy(
   () => import("../core/protected/Academics/index")
 );
+
 
 const AddNewRole = lazy(
   () => import("../core/protected/UserManagement/Roles/AddNewRole")
@@ -111,7 +132,7 @@ const AppRoutes = () => {
         },
         {
           path: "notice-board",
-          element: <NoticeBoard />,
+          element: <NoticeBoard/>,
           children: [
             {
               path: "Notice",
@@ -123,7 +144,7 @@ const AppRoutes = () => {
             },
             {
               path: "Email",
-              element: <NoticeBoard />,
+              element: <AddNewEmail/>,
             },
             {
               path: "Lorem",
@@ -164,13 +185,28 @@ const AppRoutes = () => {
               element: <AddNewCourse />,
             },
             {
-              path: "slides",
-              element: <Academics />,
-            },
+              path:"AddSemester",
+              element:<AddSemester/>
+             },
             {
-              path: "attendance",
-              element: <Academics />,
-            },
+              path: "slides",
+              element: <AddNewSlides/>,
+              children:[
+                
+              ]
+            },{
+              path:"FirstSemesterSlides",
+              element:<FirstSemesterSlides/>
+             },
+             
+                
+          
+            // {
+            //   path: "attendance",
+            //   element: <AddNewAttendance />,
+            // },
+          
+            
           ],
         },
         {
