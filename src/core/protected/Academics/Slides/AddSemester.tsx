@@ -8,7 +8,8 @@ import Table from "../../../../components/Table/Table";
 import TableHeader from "../../../../components/Table/TableHeader";
 import { useHeaderDetails } from "../../../../context/HeaderContext";
 import { SideBarPaths } from "../../SideBar/SidebarPaths";
-
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddSemester = () => {
   const [searchQuery, setSearchQUery] = useState<string>("");
@@ -18,6 +19,11 @@ const AddSemester = () => {
     headerDetails.setSubHeader("Slides");
   }, []);
   const handleSearch = () => {};
+  const notify = ()=>{
+ 
+    // Calling toast method by passing string
+    toast.success('Downloaded successful');
+}
 
   const columns: GridColDef[] = [
     {
@@ -50,7 +56,7 @@ const AddSemester = () => {
       flex: 1,
       renderCell: (params: GridValueGetterParams) => (
         <>
-        <IconButton aria-label="download">
+        <IconButton aria-label="download" onClick={notify}>
         <BsArrowDownSquareFill/>
           </IconButton>
           <IconButton aria-label="view">
