@@ -228,7 +228,7 @@ const AppRoutes = () => {
             //   element: <AddNewAttendance />,
             // },
           
-            
+            {
               path: "attendance",
               element: <MainAttendance/>,
               children:[
