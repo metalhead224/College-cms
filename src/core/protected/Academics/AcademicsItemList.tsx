@@ -12,7 +12,7 @@ export const academicsMenuList: AcademicsMenuList = [
     name: "Faculty",
     icon: <i className="icon-library-alt icon-md" />,
     id: 1,
-    link: "/dashboard/academics/faculty",
+    link: "faculty",
   },
   {
     name: "Program",

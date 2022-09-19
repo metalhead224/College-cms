@@ -5,6 +5,7 @@ import "bootstrap/js/dist/modal";
 import "bootstrap/js/dist/tab.js";
 import "./App.scss";
 
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { Suspense, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
