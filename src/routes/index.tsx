@@ -210,6 +210,28 @@ const AppRoutes = () => {
               element:<AddSemester/>
              },
             {
+<<<<<<< HEAD
+=======
+
+              path: "slides",
+              element: <AddNewSlides/>,
+              children:[
+                
+              ]
+            },{
+              path:"FirstSemesterSlides",
+              element:<FirstSemesterSlides/>
+             },
+             
+                
+          
+            // {
+            //   path: "attendance",
+            //   element: <AddNewAttendance />,
+            // },
+          
+            
+>>>>>>> remotes/origin/eshan-dev
               path: "attendance",
               element: <MainAttendance/>,
               children:[
@@ -228,6 +250,10 @@ const AppRoutes = () => {
           {path:'/dashboard/academics/attendance/semesters/8/attendancetable/attendancechart',
           element:<AttendanceChart/>
         },
+<<<<<<< HEAD
+=======
+
+>>>>>>> remotes/origin/eshan-dev
           ],
         },
         {
