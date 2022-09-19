@@ -1,7 +1,11 @@
-import { Children, lazy, Suspense } from "react";
+import path from "path";
+import { element } from "prop-types";
+import {Children, lazy, Suspense } from "react";
 import { useRoutes } from "react-router-dom";
 import LoadingSpinner from "../components/LoadingSpinner/LoadingSpinner";
+import AddNewAttendance from "../core/protected/Academics/Atttendances/AddNewAttendance";
 
+// import AddNewNotice from "../core/protected/NoticeBoard/AddNewNotice";
 
 //use react lazy to import components for lazy loading components
 
@@ -86,6 +90,12 @@ const AddNewRole = lazy(
 const AddNewUser = lazy(
   () => import("../core/protected/UserManagement/Users/AddNewUser")
 );
+const Notice = lazy(
+  () => import("../core/protected/NoticeBoard/Notice")
+);
+const AddNewNotice = lazy(
+  () => import("../core/protected/NoticeBoard/AddNewNotice")
+)
 
 
 const MainAttendance=lazy(
@@ -156,9 +166,16 @@ const AppRoutes = () => {
           element: <NoticeBoard/>,
           children: [
             {
-              path: "Notice",
+              path: "",
               element: <NoticeBoard />,
+              children:[
+                {
+                  path:"notice",
+                  element:<Notice/>,
+                },
+              ]
             },
+           
             {
               path: "SMS",
               element: <NoticeBoard />,
@@ -171,6 +188,14 @@ const AppRoutes = () => {
               path: "Lorem",
               element: <NoticeBoard />,
             },
+            {
+              path:"add-new-notice",
+              element:<AddNewNotice />,
+            },
+            // {
+            //   path:"Add New Notice",
+            //   element: <AddNewNotice />,
+            // },
           ],
         },
         {
@@ -210,8 +235,6 @@ const AppRoutes = () => {
               element:<AddSemester/>
              },
             {
-<<<<<<< HEAD
-=======
 
               path: "slides",
               element: <AddNewSlides/>,
@@ -225,13 +248,12 @@ const AppRoutes = () => {
              
                 
           
-            // {
-            //   path: "attendance",
-            //   element: <AddNewAttendance />,
-            // },
-          
+            {
+              path: "attendance",
+              element: <AddNewAttendance />,
+            },
+            {
             
->>>>>>> remotes/origin/eshan-dev
               path: "attendance",
               element: <MainAttendance/>,
               children:[
@@ -240,6 +262,7 @@ const AppRoutes = () => {
                   element:<Semesters/>,
                 }
               ]
+              
             },
             {path:'/dashboard/academics/attendance/semesters/8',
             element:<EightSemester/>
@@ -250,17 +273,16 @@ const AppRoutes = () => {
           {path:'/dashboard/academics/attendance/semesters/8/attendancetable/attendancechart',
           element:<AttendanceChart/>
         },
-<<<<<<< HEAD
-=======
-
->>>>>>> remotes/origin/eshan-dev
           ],
         },
         {
           path: "users",
           element: <NoticeBoard />,
         },
-        
+        // {
+        //   path:"add-new-notice",
+        //   element:<AddNewNotice />,
+        // },
       ],
     },
     {

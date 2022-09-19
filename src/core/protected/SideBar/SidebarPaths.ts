@@ -27,6 +27,10 @@ export const SideBarPaths = {
     FirstSemesterSlides:"/dashboard/academics/FirstSemesterSlides",
   },
 
-  noticeBoard: "/dashboard/notice-board",
-  AddNewEmail: "/dashboard/notice-board/AddNewEmail",
+  noticeBoard:{
+    base: "/dashboard/notice-board",
+    noticeboard:"/dashboard/notice-board/noticeboard",
+    notice:"/dashboard/notice-board/notice",
+  addNewNotice:"/dashboard/notice-board/add-new-notice",
+}
 };

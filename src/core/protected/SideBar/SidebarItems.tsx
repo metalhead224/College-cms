@@ -63,7 +63,7 @@ export const SideBarItems: SideBarItems = [
     ],
   },
   {
-    path: SideBarPaths.noticeBoard,
+    path: SideBarPaths.noticeBoard.base,
     title: "Notice Board",
     icon: <MdLayers size={25} />,
   },
