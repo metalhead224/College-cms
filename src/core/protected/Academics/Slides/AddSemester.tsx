@@ -1,13 +1,14 @@
 import { IconButton } from "@mui/material";
 import { GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
-import { BsFillEyeFill } from "react-icons/bs";
+import { BsArrowDownSquareFill, BsFillEyeFill } from "react-icons/bs";
 import { FiEdit } from "react-icons/fi";
 import { MdDelete } from "react-icons/md";
 import Table from "../../../../components/Table/Table";
 import TableHeader from "../../../../components/Table/TableHeader";
 import { useHeaderDetails } from "../../../../context/HeaderContext";
 import { SideBarPaths } from "../../SideBar/SidebarPaths";
+
 
 const AddSemester = () => {
   const [searchQuery, setSearchQUery] = useState<string>("");
@@ -49,6 +50,9 @@ const AddSemester = () => {
       flex: 1,
       renderCell: (params: GridValueGetterParams) => (
         <>
+        <IconButton aria-label="download">
+        <BsArrowDownSquareFill/>
+          </IconButton>
           <IconButton aria-label="view">
             <BsFillEyeFill />
           </IconButton>
@@ -76,8 +80,8 @@ const AddSemester = () => {
       Name: "maths.pdf",
       Size: "2MB",
       LastModified:"20 Aug 2021",
-      Download:"maths.pdf"
-
+      Download:"maths.pdf",
+     
     }
    
   ];

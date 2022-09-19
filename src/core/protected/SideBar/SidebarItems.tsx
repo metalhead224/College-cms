@@ -32,7 +32,23 @@ export const SideBarItems: SideBarItems = [
       {
         path: SideBarPaths.usermanagement.users,
         title: "Users",
+      }, {
+        path: SideBarPaths.usermanagement.library,
+        title: "Library",
       },
+      {
+        path: SideBarPaths.usermanagement.accounts,
+        title: "Accounts",
+      },
+      {
+        path: SideBarPaths.usermanagement.forum,
+        title: "Forum",
+      },
+      {
+        path: SideBarPaths.usermanagement.sms,
+        title: "Sms and Notification",
+      },
+      
     ],
   },
   {
@@ -63,8 +79,35 @@ export const SideBarItems: SideBarItems = [
     ],
   },
   {
-    path: SideBarPaths.noticeBoard,
+    path: SideBarPaths.noticeBoard.Notice,
     title: "Notice Board",
     icon: <MdLayers size={25} />,
+    children:[
+      {
+        path: SideBarPaths.noticeBoard.Notice,
+        title: "Notice ",
+
+      },{
+        path: SideBarPaths.noticeBoard.SMS,
+        title: "SMS ",
+
+      },{
+        path: SideBarPaths.noticeBoard.Email,
+        title: "Email ",
+
+      },{
+        path: SideBarPaths.noticeBoard.Lorem,
+        title: "Lorem ",
+
+      },{
+        path: SideBarPaths.noticeBoard.Exam,
+        title: " Exam Routine ",
+
+      },{
+        path: SideBarPaths.noticeBoard.Results,
+        title: "Results",
+
+      }
+    ]
   },
 ];

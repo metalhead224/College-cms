@@ -26,6 +26,29 @@ export const usermanagementMenuList: UserManagementMenuList = [
     icon: <i className="icon-equalizer-list icon-md" />,
     id: 1,
     link: "/dashboard/user-management/users",
+  },{
+    name: "Library",
+    icon: <i className="icon-library-alt icon-md" />,
+    id: 1,
+    link: "/dashboard/user-management/Library",
+  },
+  {
+    name: "Accounts",
+    icon: <i className="icon-equalizer-list icon-md" />,
+    id: 1,
+    link: "/dashboard/user-management/Accounts",
+  },
+  {
+    name: "Forum",
+    icon: <i className="icon-equalizer-list icon-md" />,
+    id: 1,
+    link: "/dashboard/user-management/Forum",
+  },
+  {
+    name: "SMS and Notification",
+    icon: <i className="icon-equalizer-list icon-md" />,
+    id: 1,
+    link: "/dashboard/user-management/sms-notification",
   },
 ];
 

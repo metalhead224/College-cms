@@ -171,6 +171,14 @@ const AppRoutes = () => {
               path: "Lorem",
               element: <NoticeBoard />,
             },
+            {
+              path: "Exam-Routine",
+              element: <NoticeBoard />,
+            },
+            {
+              path: "Results",
+              element: <NoticeBoard />,
+            },
           ],
         },
         {

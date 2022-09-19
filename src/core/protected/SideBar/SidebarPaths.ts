@@ -11,6 +11,11 @@ export const SideBarPaths = {
     addNewPermission: "/dashboard/user-management/add-new-permission",
     addNewRole: "/dashboard/user-management/add-new-role",
     users: "/dashboard/user-management/users",
+    library:"/dashboard/user-management/library",
+    accounts:"/dashboard/user-management/account",
+    forum:"/dashboard/user-management/forum",
+    sms:"/dashboard/user-management/sms-notification",
+
   },
   academics: {
     base: "/dashboard/academics",
@@ -27,6 +32,16 @@ export const SideBarPaths = {
     FirstSemesterSlides:"/dashboard/academics/FirstSemesterSlides",
   },
 
-  noticeBoard: "/dashboard/notice-board",
-  AddNewEmail: "/dashboard/notice-board/AddNewEmail",
+  noticeBoard: {
+    base:"/dashboard/notice-board",
+    Notice:"/dashboard/notice-board/notice",
+    SMS:"/dashboard/notice-board/sms",
+    Email:"/dashboard/notice-board/Email",
+    Lorem:"/dashboard/notice-board/Lorem",
+    Exam:"/dashboard/notice-board/Exam-Routine",
+    Results:"/dashboard/notice-board/Results",
+  // AddNewEmail: "/dashboard/notice-board/AddNewEmail",
+
+
+}
 };

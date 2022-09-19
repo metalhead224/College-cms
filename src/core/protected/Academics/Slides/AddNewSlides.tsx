@@ -24,22 +24,22 @@ const AddNewSlides = (props) => {
   const card = [
     {
       course: "BCIS",
-      icon: <LibraryBooksSharpIcon />,
+      icon: <i className="icon-library-alt icon-md" />,
       course1: "Bsc Nursing",
     },
     {
       course: "BBA",
-      icon: <LibraryBooksSharpIcon />,
+      icon: <i className="icon-library-alt icon-md" />,
       course1: "BPH",
     },
     {
       course: "BHCM",
-      icon: <LibraryBooksSharpIcon />,
+      icon: <i className="icon-library-alt icon-md" />,
       course1: "Bsc MB",
     },
     {
       course: "BBA-BI",
-      icon: <LibraryBooksSharpIcon />,
+      icon: <i className="icon-library-alt icon-md" />,
       course1: "Bsc MLT",
     },
   ];
@@ -54,10 +54,12 @@ const AddNewSlides = (props) => {
       {card.map((item, index) => (
         <div className="card" onClick={handleOpen}>
           <>
-            <p>{item.icon}</p>
+          <p>{item.icon}</p>
+           
           </>
           <>
-            <p>{item.course}</p>
+          <p>{item.course}</p>
+         
           </>
         </div>
       ))}
@@ -80,10 +82,11 @@ const AddNewSlides = (props) => {
       {card.map((item, index) => (
         <div className="card" onClick={handleOpen}>
           <>
-            <p>{item.course1}</p>
+          <p>{item.icon}</p>
+           
           </>
           <>
-            <p>{item.icon}</p>
+          <p>{item.course1}</p>
           </>
         </div>
       ))}
@@ -109,7 +112,7 @@ const AddNewSlides = (props) => {
       <div className="card2" onClick={handleOpen}>
         <p>Bsc MM</p>
         <p>
-          <LibraryBooksSharpIcon />
+        <i className="icon-library-alt icon-md" />,
         </p>
       </div>
       <Modal

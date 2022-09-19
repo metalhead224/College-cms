@@ -32,5 +32,18 @@ export const noticeboarddMenuList: NoticeBoardMenuList = [
     id: 1,
     link: "/dashboard/notice-board/lorem",
   },
+  {
+    name: "Exam Routine",
+    icon: <i className="icon-library-alt icon-md" />,
+    id: 1,
+    link: "/dashboard/notice-board/exam-routine",
+  },
+  {
+    name: "Results",
+    icon: <i className="icon-calendar-cms icon-md" />,
+    id: 1,
+    link: "/dashboard/notice-board/results",
+  },
+ 
  
 ];
