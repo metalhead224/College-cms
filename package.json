@@ -13,6 +13,7 @@
     "@mui/icons-material": "^5.10.3",
 
     "@mui/material": "^5.10.5",
+
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "@mui/styled-engine-sc": "^5.10.0",
     "@mui/styles": "^5.10.3",
@@ -22,6 +23,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+
     "@types/jest": "^29.0.3",
     "@types/node": "^18.7.18",
     "@types/react": "^18.0.20",
@@ -31,6 +33,9 @@
     "canvasjs": "^1.8.3",
     "canvasjs-react-charts": "^1.0.5",
     "date-fns": "^2.29.2",
+
+    "eslint-plugin-react-hooks": "^5.0.0-next-e6a062bd2-20220913",
+
     "dayjs": "^1.11.5",
     "formik": "^2.2.9",
     "framer-motion": "^6.5.1",
@@ -48,7 +53,7 @@
     "react-scripts": "5.0.1",
     "react-select": "^5.4.0",
     "react-table": "^7.8.0",
-    "react-toastify": "^9.0.7",
+    "react-toastify": "^9.0.8",
     "react-tooltip": "^4.2.21",
     "reactstrap": "^9.1.2",
     "styled-components": "^5.3.5",

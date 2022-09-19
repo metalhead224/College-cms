@@ -1,4 +1,5 @@
 import AddNewFaculty from '../Academics/Faculty/AddNewFaculty';
+import AddSemester from '../Academics/Slides/AddSemester';
 export const SideBarPaths = {
   main: "/dashboard",
   dashboard: "/dashboard/main",
@@ -21,7 +22,11 @@ export const SideBarPaths = {
     attendance: "/dashboard/academics/attendance",
     addNewFaculty : "/dashboard/academics/add-new-faculty",
     addNewProgram : "/dashboard/academics/add-new-program",
+    addNewSlides:"/dashboard/academics/slides",
+    AddSemester:"/dashboard/academics/AddSemester",
+    FirstSemesterSlides:"/dashboard/academics/FirstSemesterSlides",
   },
 
   noticeBoard: "/dashboard/notice-board",
+  AddNewEmail: "/dashboard/notice-board/AddNewEmail",
 };
