@@ -1,6 +1,8 @@
-import { lazy, Suspense } from "react";
+import {Children, lazy, Suspense } from "react";
 import { useRoutes } from "react-router-dom";
 import LoadingSpinner from "../components/LoadingSpinner/LoadingSpinner";
+
+// import AddNewNotice from "../core/protected/NoticeBoard/AddNewNotice";
 
 //use react lazy to import components for lazy loading components
 
@@ -64,6 +66,12 @@ const AddNewRole = lazy(
 const AddNewUser = lazy(
   () => import("../core/protected/UserManagement/Users/AddNewUser")
 );
+const Notice = lazy(
+  () => import("../core/protected/NoticeBoard/Notice")
+);
+const AddNewNotice = lazy(
+  () => import("../core/protected/NoticeBoard/AddNewNotice")
+)
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -114,9 +122,16 @@ const AppRoutes = () => {
           element: <NoticeBoard />,
           children: [
             {
-              path: "Notice",
+              path: "",
               element: <NoticeBoard />,
+              children:[
+                {
+                  path:"notice",
+                  element:<Notice/>,
+                },
+              ]
             },
+           
             {
               path: "SMS",
               element: <NoticeBoard />,
@@ -129,6 +144,14 @@ const AppRoutes = () => {
               path: "Lorem",
               element: <NoticeBoard />,
             },
+            {
+              path:"add-new-notice",
+              element:<AddNewNotice />,
+            },
+            // {
+            //   path:"Add New Notice",
+            //   element: <AddNewNotice />,
+            // },
           ],
         },
         {
@@ -177,6 +200,10 @@ const AppRoutes = () => {
           path: "users",
           element: <NoticeBoard />,
         },
+        // {
+        //   path:"add-new-notice",
+        //   element:<AddNewNotice />,
+        // },
       ],
     },
     {

@@ -33,4 +33,5 @@ export const noticeboarddMenuList: NoticeBoardMenuList = [
     link: "/dashboard/notice-board/lorem",
   },
  
+ 
 ];

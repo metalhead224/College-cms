@@ -23,5 +23,10 @@ export const SideBarPaths = {
     addNewProgram : "/dashboard/academics/add-new-program",
   },
 
-  noticeBoard: "/dashboard/notice-board",
+  noticeBoard:{
+    base: "/dashboard/notice-board",
+    noticeboard:"/dashboard/notice-board/noticeboard",
+    notice:"/dashboard/notice-board/notice",
+  addNewNotice:"/dashboard/notice-board/add-new-notice",
+}
 };
